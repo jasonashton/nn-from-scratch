@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  nn-from-scratch:
+    image: nn-from-scratch
+    build:
+      context: .
+      dockerfile: ./Dockerfile
