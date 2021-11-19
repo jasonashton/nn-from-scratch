@@ -2,7 +2,7 @@ FROM ubuntu:20.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=America/Los_Angeles
-RUN apt-get update && apt-get install -y git cmake g++
+RUN apt-get update && apt-get install -y git cmake g++ libeigen3-dev
 
 COPY . /code/nn-from-scratch
 WORKDIR /code/nn-from-scratch
